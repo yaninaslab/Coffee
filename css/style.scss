@@ -1,0 +1,73 @@
+@import 'global';
+
+#page-header {
+    display: grid;
+    place-items: center;
+    height: 170px;
+    background-color: black;
+  }
+  #page-header div {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+  }
+  div {
+    align-self: end;
+    justify-self: center;
+  }
+  p {
+    align-self: start;
+    justify-self: center;
+    font-size: small;
+    font-style: oblique;
+    opacity: 0.5;
+  }
+  h3 {
+    align-self: end;
+  }
+  #page-header img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  #page-header>h3,p {
+      color: whitesmoke;
+  }
+  #page-header>div h3 {
+    color: whitesmoke;
+}
+  #page-content {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/main.jpg);
+    position:relative;
+  } 
+  nav {
+      display: grid;
+      place-items: center;
+      align-self: end;
+      position: absolute;
+      bottom: 30%;
+      margin-left: 10px;
+
+
+  }
+  .button {
+      width: 90vw;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      margin: 7px;
+      font-weight: bold;
+      text-decoration: none;
+      color: whitesmoke;
+      border-radius: 15px;
+  }
+#login_button {
+background-color: #9D4616CC;
+
+}
+#account_button {
+background-color: #2E2E2ECC;
+
+}

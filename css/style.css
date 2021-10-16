@@ -1,35 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  #page-header {
-    display: grid;
-    place-items: center;
-    height: 200px;
-    background-color: black;
-  }
-  #page-header div {
-    display: grid;
-    grid-auto-flow: column;
-  }
-  #page-header img {
-    width: 100px;
-    height: 100px;
-  }
-  #page-header>h2,h3 {
-      color: whitesmoke;
-  }
-  #page-header>div h2 {
-    color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
 }
-  #page-content {
-    display: grid;
-    place-items: center;
 
-  }
+img {
+  max-width: 100%;
+}
+
+#page-header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 170px;
+  background-color: black;
+}
+
+#page-header div {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
+
+div {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+p {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: small;
+  font-style: oblique;
+  opacity: 0.5;
+}
+
+h3 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#page-header img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#page-header > h3, p {
+  color: whitesmoke;
+}
+
+#page-header > div h3 {
+  color: whitesmoke;
+}
+
+#page-content {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(images/main.jpg);
+  position: relative;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-row-align: end;
+      align-self: end;
+  position: absolute;
+  bottom: 30%;
+  margin-left: 10px;
+}
+
+.button {
+  width: 90vw;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 7px;
+  font-weight: bold;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 15px;
+}
+
+#login_button {
+  background-color: #9D4616CC;
+}
+
+#account_button {
+  background-color: #2E2E2ECC;
+}
+/*# sourceMappingURL=style.css.map */
