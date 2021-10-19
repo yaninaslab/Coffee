@@ -8,12 +8,18 @@ img {
   max-width: 100%;
 }
 
+body {
+  max-height: 100vh;
+}
+
 #page-header {
   display: -ms-grid;
   display: grid;
   place-items: center;
   height: 170px;
   background-color: black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 #page-header div {
@@ -78,6 +84,11 @@ nav {
   position: absolute;
   bottom: 30%;
   margin-left: 10px;
+}
+
+nav section {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .button {

@@ -5,6 +5,8 @@
     place-items: center;
     height: 170px;
     background-color: black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
   #page-header div {
     display: grid;
@@ -50,6 +52,10 @@
       bottom: 30%;
       margin-left: 10px;
 
+section {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
 
   }
   .button {
